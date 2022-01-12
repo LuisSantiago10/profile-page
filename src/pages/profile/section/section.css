@@ -1,0 +1,59 @@
+.section-content{
+    display: flex;
+    justify-content: center;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.profile-name{
+    padding: 0.5em 1em;
+}
+.profile-name span{
+    color: var(--primary-color);
+}
+
+.profile-description{
+    text-align: justify;
+    padding: 0.5em 1em;
+}
+.profile-icon-list{
+    justify-content: center;
+}
+.profile-icon-item{
+    box-shadow: 10px 10px 20px rgba(82 , 81, 79, 1);
+    background: #52514f;
+    cursor: pointer;
+}
+.profile-icon-list :hover{
+    box-shadow: 10px 10px 20px rgba(255, 191, 0, 0.30);
+    background: #ffbf00;
+}
+.profile-skills{
+    padding: 0.5em 1em;
+}
+.profile-skills-title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.profile-skills-list{
+    padding: 0.5em 1em;
+    justify-content: center;
+}
+.profile-skills-item{
+    box-shadow: 10px 10px 20px rgba(3, 69, 116, 0.50);
+    background: var(--primary-color);
+}
+
+@media (min-width: 950px) {
+    .profile-description{
+        max-width: 700px;
+    }
+    .profile-name h1{
+        font-size: 45px;
+    }
+    .profile-description p{
+        font-size: 30px;
+    }
+}
